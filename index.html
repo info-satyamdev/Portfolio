@@ -1566,21 +1566,24 @@ document.addEventListener('submit', function(e) {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwPyJ5QTgjgj0B96CvtdIEfFTRUuIarEQgGqjrsfgfipSAjLQXonOqe9PSmqpboXC-T/exec';
 
         fetch(scriptURL, { 
-            method: 'POST', 
-            body: new FormData(form)
-        })
-        .then(response => {
-            status.innerHTML = `<span style="color: var(--neon-cyan);">Success! Your message has been sent.</span>`;
-            form.reset();
-            btn.innerText = "Send Message";
-            btn.disabled = false;
-        })
-        .catch(error => {
-            status.innerHTML = `<span style="color: #ff4d4d;">Error! Something went wrong.</span>`;
-            btn.innerText = "Try Again";
-            btn.disabled = false;
-            console.error('Error!', error.message);
-        });
+    method: 'POST', 
+    body: new FormData(form),
+    mode: 'no-cors' // <--- Add this line
+})
+.then(response => {
+    // Note: With no-cors, you won't get a standard 'ok' response body, 
+    // but the data will successfully land in your sheet.
+    status.innerHTML = `<span style="color: var(--neon-cyan);">Success! Your message has been sent.</span>`;
+    form.reset();
+    btn.innerText = "Send Message";
+    btn.disabled = false;
+})
+.catch(error => {
+    status.innerHTML = `<span style="color: #ff4d4d;">Error! Something went wrong.</span>`;
+    btn.innerText = "Try Again";
+    btn.disabled = false;
+    console.error('Error!', error.message);
+});
     }
 });
 
