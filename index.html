@@ -937,9 +937,9 @@
             <h1>Satyam</h1>
             <div class="role-text">Full-Stack Web Developer</div>
             <p>Results-driven Full-Stack Developer with a track record of engineering 250+ responsive landing pages,
-                200+ Automated Data Pipelines and 10+ enterprise domains. Specialized in building high-performance,
-                scalable web architectures and RESTful API integrations. Expert at optimizing Core Web Vitals, Web
-                Integration and database management to deliver seamless, high-efficiency user experiences.
+                200+ Automated Data Pipelines and 10+ enterprise domains. Expert at optimizing Core Web Vitals, 
+                enterprise API integrations, and database management. Currently transitioning focus towards heavy 
+                backend logic, systems software, and AI-proof engineering to build the engines beneath the web.
             </p>
 
             <div class="social-icons">
@@ -1009,6 +1009,20 @@
                         <li><strong>Collaborative Development: </strong>Worked within an <strong>Agile
                                 environment</strong>, participating in
                             code reviews to maintain high-quality standards.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <span class="timeline-date">Aug 2024 - Sep 2025</span>
+                    <h3 class="timeline-role">Freelance Full-Stack Developer</h3>
+                    <span class="timeline-company">Independent Projects</span>
+
+                    <ul class="timeline-list">
+                        <li><strong>Platform Architecture:</strong> Designed and developed a comprehensive web directory for government exams and jobs, handling complex data structures, API rendering, and search algorithms.</li>
+                        <li><strong>Systems Transition:</strong> Began deep-dive research into Compiler Design, parsing tables, and algorithm optimization, laying the groundwork for heavy systems engineering capabilities.</li>
+                        <li><strong>Full-Stack Delivery:</strong> Managed end-to-end development lifecycles including database schema design (MySQL), UI/UX planning, and frontend responsiveness.</li>
                     </ul>
                 </div>
             </div>
@@ -1104,6 +1118,10 @@
                         <img src="images/new-php-logo.svg" alt="">
                         <p>PHP</p>
                     </span>
+                    <span class="tech-badge">
+                        <i class="fas fa-file-code" style="font-size: 38px; margin-bottom: 10px; color: #00599C;"></i>
+                        <p>C++</p>
+                    </span>
                 </div>
             </div>
             <div class="skill-category-card">
@@ -1120,7 +1138,7 @@
                     <span class="tech-badge">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                             <path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path>
-                            <path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path>
+                            <path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9-0.83-0.849-2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path>
                             <path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path>
                         </svg>
                         <p>VS Code</p>
@@ -1128,7 +1146,9 @@
                     <span class="tech-badge" style="padding: 24px 18px;"><p>DSA</p></span>
                     <span class="tech-badge" style="padding: 24px 18px;"><p>OOPS</p></span>
                     <span class="tech-badge" style="padding: 24px 18px;"><p>Responsive</p></span>
-                    <span class="tech-badge" style="padding: 24px 18px;"><p>UI/UX</p></span>
+                    <span class="tech-badge" style="padding: 24px 18px;"><p>Jest / Cypress</p></span>
+                    <span class="tech-badge" style="padding: 24px 18px;"><p>Prompt Engineering</p></span>
+                    <span class="tech-badge" style="padding: 24px 18px;"><p>AI-Assisted Dev</p></span>
                 </div>
             </div>
         </div>
@@ -1137,6 +1157,39 @@
     <section class="section" id="projects">
         <h2 class="section-title">Latest <span>Projects</span></h2>
         <div class="project-grid">
+
+            <div class="project-card" onclick="openProjectOverlay('salesforce')">
+                <div class="project-content">
+                    <div class="project-title">
+                        Enterprise Lead Routing Engine
+                        <a href="javascript:void(0)"><i class="fas fa-cloud" style="color:var(--text-main)"></i></a>
+                    </div>
+                    <span class="project-tech">Node.js • OAuth 2.0 • Salesforce API</span>
+                    <p class="project-desc">Developed a complete full-stack middleware system designed to capture, validate, and securely route high-volume web application data directly into a Salesforce CRM environment.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectOverlay('compiler')">
+                <div class="project-content">
+                    <div class="project-title">
+                        C++ Lexical Analyzer
+                        <a href="javascript:void(0)"><i class="fas fa-microchip" style="color:var(--text-main)"></i></a>
+                    </div>
+                    <span class="project-tech">C++ • Parsing Algorithms • Systems</span>
+                    <p class="project-desc">Engineered a custom lexical analyzer and parsing table generator from scratch, demonstrating a deep understanding of compiler design.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="openProjectOverlay('pythonlogo')">
+                <div class="project-content">
+                    <div class="project-title">
+                        Automated Branding Pipeline
+                        <a href="javascript:void(0)"><i class="fab fa-python" style="color:var(--text-main)"></i></a>
+                    </div>
+                    <span class="project-tech">Python • Automation • Web Scraping</span>
+                    <p class="project-desc">Developed an automated Python script to programmatically scrape and organize thousands of company logos, enhancing team DevEx.</p>
+                </div>
+            </div>
 
             <div class="project-card" onclick="openProjectOverlay('telecalling')">
                 <div class="project-content">
@@ -1165,7 +1218,7 @@
             <div class="project-card" onclick="openProjectOverlay('cms')">
                 <div class="project-content">
                     <div class="project-title">
-                        CMS – Sales Collateral Hub
+                        CMS – Client Management System
                         <a href="javascript:void(0)"><i class="fas fa-lock" style="color:var(--text-main)"></i></a>
                     </div>
                     <span class="project-tech">Open Contract • Confidential Client</span>
@@ -1297,6 +1350,7 @@
             "JavaScript": { desc: "The dynamic programming language driving the interactive logic, API orchestrations, and seamless user experiences.", since: 2019 },
             "Java": { desc: "A robust, object-oriented programming language designed for building secure, enterprise-level backend systems.", since: 2023 },
             "PHP": { desc: "A widely-used backend scripting language adept at managing dynamic content and server-side logic.", since: 2023 },
+            "C++": { desc: "High-performance systems programming language utilized for memory management, compiler design, and algorithmic optimization.", since: 2024 },
             "Restful API": { desc: "Architectural standard utilized to seamlessly integrate frontend interfaces with backend services for real-time data sync.", since: 2021 },
             "MySQL": { desc: "A reliable relational database management system used for structuring and querying complex datasets.", since: 2020 },
             "MongoDB": { desc: "A scalable NoSQL document database utilized for flexible, high-volume data storage and pipeline management.", since: 2025 },
@@ -1307,32 +1361,67 @@
             "DSA": { desc: "Data Structures and Algorithms — the foundational logic ensuring highly optimized and efficient code execution.", since: 2023 },
             "OOPS": { desc: "Object-Oriented Programming — utilizing classes and objects to create modular, reusable, and maintainable software.", since: 2023 },
             "Responsive": { desc: "Design philosophy ensuring 100% cross-browser compatibility and perfect layout adaptation across all device sizes.", since: 2019 },
-            "UI/UX": { desc: "User Interface and User Experience principles applied to create intuitive, high-converting, and visually striking applications.", since: 2019 }
+            "Jest / Cypress": { desc: "Automated testing frameworks ensuring robust code coverage and reliable end-to-end user flows.", since: 2025 },
+            "Prompt Engineering": { desc: "Advanced capability in writing and optimizing AI prompts to generate code, data, and logic, reducing boilerplate development time significantly.", since: 2025 },
+            "AI-Assisted Dev": { desc: "Integrating Large Language Models and AI tools directly into the development workflow to accelerate production and deployment cycles.", since: 2025 }
         };
 
         const projectsData = {
             "salesforce": {
-    title: "Enterprise Lead Routing Engine",
-    icon: '<i class="fas fa-server" style="color:#00a1e0"></i>',
-    period: "March 2026",
-    contract: "Full-Stack Architecture",
-    client: "Educational Sector",
-    tech: "Node.js • Express • REST APIs • Salesforce CRM",
-    desc: "Developed a complete full-stack middleware system designed to capture, validate, and securely route high-volume web application data directly into a Salesforce CRM environment.",
-    highlights: `
-        <ul class="highlight-list">
-            <li><strong>Custom Node Microservice:</strong> Built an Express.js backend to act as a secure bridge between public-facing landing pages and the internal CRM.</li>
-            <li><strong>OAuth 2.0 Security:</strong> Programmed secure token-based authentication to manage Salesforce API sessions without exposing database credentials to the client side.</li>
-            <li><strong>Automated Data Pipelines:</strong> Engineered the logic to sanitize incoming JSON payloads and map them instantly to Salesforce Lead objects, eliminating hours of manual data entry.</li>
-        </ul>
-    `
-},"telecalling": {
+                title: "Enterprise Lead Routing Engine",
+                icon: '<i class="fas fa-server" style="color:#00a1e0"></i>',
+                period: "March 2026",
+                contract: "Full-Stack Architecture",
+                client: "Educational Sector",
+                tech: "Node.js • Express • REST APIs • Salesforce CRM",
+                desc: "Developed a complete full-stack middleware system designed to capture, validate, and securely route high-volume web application data directly into a Salesforce CRM environment.",
+                highlights: `
+                    <ul class="highlight-list">
+                        <li><strong>Custom Node Microservice:</strong> Built an Express.js backend to act as a secure bridge between public-facing landing pages and the internal CRM.</li>
+                        <li><strong>OAuth 2.0 Security:</strong> Programmed secure token-based authentication to manage Salesforce API sessions without exposing database credentials to the client side.</li>
+                        <li><strong>Automated Data Pipelines:</strong> Engineered the logic to sanitize incoming JSON payloads and map them instantly to Salesforce Lead objects, eliminating hours of manual data entry.</li>
+                    </ul>
+                `
+            },
+            "compiler": {
+                title: "C++ Lexical Analyzer & Parser",
+                icon: '<i class="fas fa-microchip" style="color:var(--neon-cyan)"></i>',
+                period: "Dec 2025 - Jan 2026",
+                contract: "Academic / Research",
+                client: "Systems Engineering Focus",
+                tech: "C++ • Data Structures • Parsing Algorithms",
+                desc: "Designed and implemented a custom lexical analyzer capable of tokenizing complex input streams, coupled with a robust parsing algorithm to validate syntax based on formal grammar rules.",
+                highlights: `
+                    <ul class="highlight-list">
+                        <li><strong>Algorithmic Efficiency:</strong> Implemented optimized finite automata (DFA/NFA) for lightning-fast token recognition.</li>
+                        <li><strong>Memory Management:</strong> Utilized advanced C++ memory management techniques to ensure zero memory leaks during parsing cycles.</li>
+                        <li><strong>Systems Proof:</strong> Developed as a foundational step toward transitioning into heavy backend and AI-proof systems programming.</li>
+                    </ul>
+                `
+            },
+            "pythonlogo": {
+                title: "Automated Branding Pipeline",
+                icon: '<i class="fab fa-python" style="color:var(--neon-cyan)"></i>',
+                period: "March 2026",
+                contract: "Internal Tooling / DevEx",
+                client: "Internal Team Efficiency",
+                tech: "Python • Web Scraping • File I/O",
+                desc: "Developed a Python automation utility to programmatically fetch, download, and organize company assets, directly addressing manual DevEx bottlenecks.",
+                highlights: `
+                    <ul class="highlight-list">
+                        <li><strong>Programmatic Scraping:</strong> Automated the retrieval of high-quality company logos directly from web sources.</li>
+                        <li><strong>File System Integration:</strong> Wrote OS-level logic to save files sequentially and output clean directory paths for immediate use.</li>
+                        <li><strong>Time-Saving Metric:</strong> Completely eliminated hours of manual Google searching and image saving for the design team.</li>
+                    </ul>
+                `
+            },
+            "telecalling": {
                 title: "Telecalling Lead Management",
                 icon: '<i class="fas fa-headset" style="color:var(--neon-cyan)"></i>',
                 period: "March 2026",
                 contract: "Open Contract / Freelance",
                 client: "Confidential Internal Tool",
-                tech: "HTML5 • CSS3 • JavaScript • PHP • MySQL • Node.js • Git • GitHub • VS Code • DSA • OOPS • Responsive • UI/UX • Restful API • MongoDB • Node Logic",
+                tech: "Full-Stack • RBAC • Security",
                 desc: "Built a hierarchical lead management platform for a telecalling team. Designed to streamline lead distribution across multiple organizational tiers.",
                 highlights: `
                     <ul class="highlight-list">
@@ -1367,7 +1456,7 @@
                 period: "Nov 2025",
                 contract: "Open Contract",
                 client: "Confidential SaaS Provider",
-                tech: "HTML5 • CSS3 • JavaScript • PHP • MySQL • Node.js • Restful API",
+                tech: "PHP • JavaScript • MySQL • Custom UI",
                 desc: "Built a centralized, high-performance repository for sales assets to eliminate version control issues and improve lead response times.",
                 highlights: `
                     <ul class="highlight-list">
@@ -1399,7 +1488,7 @@
                 period: "Sep 2024 - Sep 2024",
                 contract: "Personal Project",
                 client: "Portfolio Work",
-                tech: "JS Performance API • Responsive CSS3 • HTML5",
+                tech: "JS Performance API • Responsive CSS",
                 desc: "Engineered a lightweight network utility tool calculating download speeds by loading a controlled, un-cached data chunk.",
                 highlights: `
                     <ul class="highlight-list">
@@ -1415,7 +1504,7 @@
                 period: "Mar 2024 - Apr 2024",
                 contract: "Personal Project",
                 client: "Portfolio Work",
-                tech: "JavaScript • Third-Party REST API • CSS3 • HTML5",
+                tech: "JavaScript • Third-Party REST API • Flexbox",
                 desc: "Created a real-time financial utility handling conversions for over 150 global fiat currencies.",
                 highlights: `
                     <ul class="highlight-list">
@@ -1424,24 +1513,24 @@
                         <li><strong>Mobile-First Performance:</strong> Designed a highly responsive interface resulting in extremely fast interaction times.</li>
                     </ul>
                 `
-            },"contact" : {
-    title: "Get In Touch",
-    icon: '<i class="fas fa-paper-plane" style="color:var(--neon-cyan)"></i>',
-    period: "Available 24/7",
-    contract: "Direct Inquiry",
-    client: "Always Active",
-    // tech: "Google Apps Script • REST API • Secure Form Handling",
-    desc: "Use the form below to send a direct message to me.",
-    highlights: `
-        <form id="contact-form" style="margin-top:20px;">
-            <input type="text" id="name" name="name" placeholder="Your Name" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px;">
-            <input type="email" id="email" name="email" placeholder="Your Email" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px;">
-            <textarea name="message" id="message" placeholder="Your Message" rows="4" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px; resize:none;"></textarea>
-            <button type="submit" id="submit-btn" class="btn-main" style="width:100%; border:none; cursor:pointer;">Send Message</button>
-        </form>
-        <div id="form-status" style="margin-top:15px; text-align:center; font-size:14px;"></div>
-    `
-}
+            },
+            "contact" : {
+                title: "Get In Touch",
+                icon: '<i class="fas fa-paper-plane" style="color:var(--neon-cyan)"></i>',
+                period: "Available 24/7",
+                contract: "Direct Inquiry",
+                client: "Always Active",
+                desc: "Use the form below to send a direct message to me.",
+                highlights: `
+                    <form id="contact-form" style="margin-top:20px;">
+                        <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px;">
+                        <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px;">
+                        <textarea name="message" placeholder="Your Message" rows="4" required style="width:100%; padding:12px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--neon-cyan); color:white; border-radius:8px; resize:none;"></textarea>
+                        <button type="submit" id="submit-btn" class="btn-main" style="width:100%; border:none; cursor:pointer;">Send Message</button>
+                    </form>
+                    <div id="form-status" style="margin-top:15px; text-align:center; font-size:14px;"></div>
+                `
+            }
         };
 
         // --- TECH HOVER LOGIC --- //
@@ -1564,45 +1653,41 @@
             });
         });
 
-
         // Handle Form Submission to Google Sheets
-document.addEventListener('submit', function(e) {
-    if (e.target && e.target.id === 'contact-form') {
-        e.preventDefault();
-        
-        const form = e.target;
-        const btn = document.getElementById('submit-btn');
-        const status = document.getElementById('form-status');
-        
-        btn.innerText = "Sending...";
-        btn.disabled = true;
+        document.addEventListener('submit', function(e) {
+            if (e.target && e.target.id === 'contact-form') {
+                e.preventDefault();
+                
+                const form = e.target;
+                const btn = document.getElementById('submit-btn');
+                const status = document.getElementById('form-status');
+                
+                btn.innerText = "Sending...";
+                btn.disabled = true;
 
-        // Replace 'YOUR_GOOGLE_SCRIPT_URL' with your actual Web App URL from Google Sheets
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwPyJ5QTgjgj0B96CvtdIEfFTRUuIarEQgGqjrsfgfipSAjLQXonOqe9PSmqpboXC-T/exec';
+                // Replace 'YOUR_GOOGLE_SCRIPT_URL' with your actual Web App URL from Google Sheets
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwKXfcVWrj_K5XxA0apkkLLAOfZcHzm3KNqYHKhFJQ/dev';
 
-        fetch(scriptURL, { 
-    method: 'POST', 
-    body: new FormData(form),
-    mode: 'no-cors' // <--- Add this line
-})
-.then(response => {
-    // Note: With no-cors, you won't get a standard 'ok' response body, 
-    // but the data will successfully land in your sheet.
-    status.innerHTML = `<span style="color: var(--neon-cyan);">Success! Your message has been sent.</span>`;
-    form.reset();
-    btn.innerText = "Send Message";
-    btn.disabled = false;
-})
-.catch(error => {
-    status.innerHTML = `<span style="color: #ff4d4d;">Error! Something went wrong.</span>`;
-    btn.innerText = "Try Again";
-    btn.disabled = false;
-    console.error('Error!', error.message);
-});
-    }
-});
+                fetch(scriptURL, { 
+                    method: 'POST', 
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    status.innerHTML = `<span style="color: var(--neon-cyan);">Success! Your message has been sent.</span>`;
+                    form.reset();
+                    btn.innerText = "Send Message";
+                    btn.disabled = false;
+                })
+                .catch(error => {
+                    status.innerHTML = `<span style="color: #ff4d4d;">Error! Something went wrong.</span>`;
+                    btn.innerText = "Try Again";
+                    btn.disabled = false;
+                    console.error('Error!', error.message);
+                });
+            }
+        });
 
     </script>
 </body>
 
-</html>
+</html>         
